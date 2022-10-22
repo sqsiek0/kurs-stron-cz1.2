@@ -1,0 +1,216 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Open Sans', sans-serif;
+}
+
+.wrapper {
+    margin: 0 auto;
+    width: 100%;
+    max-width: 1200px;
+}
+
+/*nawigacja*/
+
+nav {
+    position: sticky;
+    top: 0;
+    height: 60px;
+    line-height: 60px;
+    text-align: center;
+    background-color: #f5f5f5;
+    z-index: 5;
+}
+
+.bars-icon {
+    display: block;
+    margin-left: auto;
+    padding: 0 20px;
+    line-height: 60px;
+    font-size: 40px;
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+
+.nav-items {
+    display: none;
+}
+
+section {
+    scroll-margin-top: 80px;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+/*header*/
+
+.header {
+    position: relative;
+    background-image: url(../img/roslina640.jpg);
+    height: 350px;
+    background-size: cover;
+    background-position: center;
+}
+
+.plant-bg {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: #d2d5db93;
+}
+
+.plant-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #43655A;
+}
+
+.plant-text h1 {
+    margin-bottom: 10px;
+    text-shadow: 2px 2px 2px;
+    color: #849BA2;
+}
+
+.plant-text span {
+    text-transform: uppercase;
+    color: #43655A;
+}
+
+/*main*/
+
+main {
+    margin: 60px 0;
+}
+
+.section-title {
+    margin-bottom: 25px;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+/*o nas*/
+
+.about-us-info {
+    margin-bottom: 10px;
+    padding: 0 20px;
+}
+
+/*produkty*/
+
+.products {
+    margin: 60px auto;
+}
+
+.product h3 {
+    text-transform: uppercase;
+    margin-bottom: 10px;
+    transition: transform 0.5s;
+}
+
+.product {
+    position: relative;
+    height: 300px;
+    background-size: cover;
+    background-position: center;
+    text-align: center;
+}
+
+.product:hover h3{
+    transform: scale(1.4);
+}
+
+.first-product {
+    background-image: url(../img/office640.jpg);
+}
+
+.second-product {
+    background-image: url(../img/house640.jpg);
+}
+
+.third-product {
+    background-image: url(../img/liść640.jpg);
+}
+
+.fourth-product {
+    background-image: url(../img/widok640.jpg);
+}
+
+/*kontakt*/
+
+.contact {
+    text-align: center;
+}
+
+.contact h3 {
+    margin: 20px 0 5px;
+    text-transform: uppercase;
+}
+
+/*footer*/
+
+footer {
+    padding: 15px 10px;
+    text-align: center;
+    background-color: #f5f5f5;
+}
+
+@media (min-width: 768px)
+{
+    .nav-items {
+        display: block;
+    }
+
+    .bars-icon {
+        display: none;
+    }
+
+    .nav-items a {
+        padding: 0 40px;
+        text-decoration: none;
+        text-transform: uppercase;
+        font-weight: bold;
+        color: #43655A;
+        transition: color 0.5s;
+    }
+    
+    .nav-items a:hover {
+        color: #ACB7C0;
+    }
+
+    .header {
+        background-image: url(../img/roslina1920.jpg);
+        height: 450px;
+    }
+
+    .plant-text h1 {
+        font-size: 40px;
+    }
+
+    .plant-text p {
+        font-size: 22px;
+    }
+
+    .product h3 {
+        font-size: 25px;
+    }
+}
+
+@media (min-width: 992px) {
+    .product {
+        display: inline-block;
+        width: 50%;
+    }
+
+    .product-box {
+        font-size: 0;
+    }
+}
